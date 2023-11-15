@@ -32,5 +32,6 @@ void sub(stack_t **stack, unsigned int line_number);
 void div_stack(stack_t **stack, unsigned int line_number);
 void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
+void add_node(stack_t **stack, int n);
 #endif /* MONTY_H */
 
