@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * pall - Prints all elements in the stack
+ * pall - Prints all elements of the stack
  * @stack: A pointer to the head of the stack
  * @line_number: The line number of the opcode in the Monty file
  *
@@ -9,9 +9,12 @@
  */
 void pall(stack_t **stack, unsigned int line_number __attribute__((unused)))
 {
-	while (*stack)
+	stack_t *temp;
+
+	temp = *stack;
+	while (temp)
 	{
-		printf("%d\n", (*stack)->n);
-		*stack = (*stack)->next;
+		printf("%d\n", temp->n);
+		temp = temp->next;
 	}
 }
