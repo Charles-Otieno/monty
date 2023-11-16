@@ -21,6 +21,22 @@ typedef struct stack_s
 	struct stack_s *prev;
 	struct stack_s *next;
 } stack_t;
+
+/**
+ * struct gvab_t - Global variable for program settings.
+ * @r_flag: Flag for return status.
+ *
+ * Description: Defines a global variable used for program-wide settings.
+ * The @r_flag member serves as a status flag for indicating the return
+ * status of the program or a specific function, controlling program flow.
+ */
+typedef struct gvab_t
+{
+	int r_flag;
+} gvab_t;
+
+extern gvab_t data;
+
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
@@ -34,6 +50,7 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
 /* Function prototypes */
 void pall(stack_t **stack, unsigned int line_number);
 void push(stack_t **stack, unsigned int line_number, int n);
@@ -48,5 +65,6 @@ void div_stack(stack_t **stack, unsigned int line_number);
 void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
 void add_node(stack_t **stack, int n);
+void free_stack(stack_t **stack);
 #endif /* MONTY_H */
 
