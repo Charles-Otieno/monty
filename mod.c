@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * mod - computes the rest of the division of the second top element of the stack by the top element of the stack
+ * mod - computes the remainder division of the second top by the top
  * @stack: double pointer to the top of the stack
  * @line_number: number of the line where the opcode was found
  *

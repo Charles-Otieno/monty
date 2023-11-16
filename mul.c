@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * mul - multiplies the second top element of the stack with the top element of the stack
+ * mul - multiplies the second top by first top element of the stack
  * @stack: double pointer to the top of the stack
  * @line_number: number of the line where the opcode was found
  *

@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * sub - subtracts the top element of the stack from the second top element of the stack
+ * sub - subtracts the top element from second top element of the stack
  * @stack: double pointer to the top of the stack
  * @line_number: number of the line where the opcode was found
  *
